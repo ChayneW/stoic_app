@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spark of Stoicism</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+    <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+  
+      <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f999473287.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <div class="background-img" style="background-image: url({{img}})">
+    <section class="hero"> 
+      <div class="hero-body">
+        <h1 class="title">
+          Spark from a Stoic: 
+        </h1>
+        <h2 class="subtitle">
+          What will help drive you towards your destiny?
+        </h2>
+        <h3 class='details'> A Random Stoic Affirmations App!</h3>
+      </div>
+    </div>
+    </section>
+    <body>
+      <div class="container">
+        <!-- refresh button inserted here: -->
+        <button align='center' class="button is-large is-dark" onClick="window.location.reload();">Refresh Page</button>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="content is-large"> 
+          <h4>Stoic: {{ quote.author }}</h4>
+          <p>Quote: {{ quote.body_text }}</p>
+          <p>Source: {{ quote.source }}</p>
+          </div>
+        </div>
+      
+      </section>
+  </body>
+</html>
+
+<footer class="footer">
+  <div class="content has-text-centered is-primary">
+    <p>
+      <strong>Stoic</strong> by <a href="https://chaynew.github.io/contact-card/" target="_blank">Chayne White</a>
+    </p>
+      <p>
+        <strong>Powered</strong> by <strong><a href="https://stoic-wisdom.com/api" target="_blank">Stoic-Wisdom API</a></strong>
+      </p>
+      <p>Art referenced in Github</p>
+    <div class="socials">
+      <a href="https://twitter.com/CswAutomation" target="_blank"><i class="fa-brands social-media-img fa-twitter"></i></a>
+      <!-- <i class="fa-brands social-media-img fa-twitter"></i> -->
+      <a href="https://www.instagram.com/automoto.csw/" target="_blank"><i class="fa-brands social-media-img fa-instagram"></i></a>
+      <a href="https://github.com/ChayneW" target="_blank"><i class="fa-brands social-media-img fa-github"></i></a>    
+    </div>
+  </div>
+</footer>

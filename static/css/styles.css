@@ -1,0 +1,39 @@
+.background-img{
+    background-size: cover;
+    min-height: 80vh; /*80vh;*/
+
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.title, .subtitle, .details{
+    text-align: center;
+    color: white;
+    
+}
+
+.button{
+    margin: 50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer{
+    background-color: hsl(0, 0%, 71%);
+}
+
+.fa-brands{
+    font-size: 30px;
+    width: 80px;
+}
+/* .container{
+    position: absolute;
+} */
